@@ -1,0 +1,164 @@
+*,
+html,
+body {
+    font-family: 'TrebuchetMS', trebuchet, sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    padding: 14px 50px;
+    border-radius: 4px;
+    background-color: #37B595;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 22px;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #1A7F75;
+}
+
+button.previous {
+    background-color: #A2ACAF;
+}
+
+button:hover {
+    background-color: #5A5F61;
+}
+
+.full-width-container {
+    width: 100%;
+    min-width: 320px;
+}
+
+.sized-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slide-container {
+    position: relative;
+    left: 0;
+    overflow: hidden;
+}
+
+.slide {
+    float: left;
+}
+
+.slide .sized-container {
+    padding: 75px 25px;
+}
+
+.button-container {
+    border-top: 1px solid black;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.button-container button {
+    float: right;
+    margin-left: 30px;
+}
+
+.pagination-container {
+    margin-top: 120px;
+}
+
+.pagination {
+    width: 100%;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.indicator {
+    width: 25px;
+    height: 25px;
+    border: 4px solid lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.indicator .tag {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: lightgray;
+    white-space: nowrap;
+}
+
+.indicator.active,
+.indicator.complete {
+    border-color: #37B595;
+}
+
+.indicator .tag {
+    color: #37B595;
+}
+
+.indicator.complete:after {
+    content: '\2713';
+    position: absolute;
+    color: #37B595;
+    left: 4px;
+    top: 3px;
+    font-size: 14px;
+}
+
+.progress-bar-container {
+    width: 10%;
+    height: 4px;
+    display: inline-block;
+    background-color: lightgray;
+    position: relative;
+    top: -10px;
+}
+
+.progress-bar-container:last-of-type {
+    display: none;
+}
+
+.progress-bar-container .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #37B595;
+}
+
+
+/*# sourceMappingURL=styl.css.map */
